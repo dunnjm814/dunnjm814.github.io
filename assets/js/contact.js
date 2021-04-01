@@ -20,14 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
       created: readableDate,
     };
 
-    await fetch(
-      "https://sheet.best/api/sheets/e35c6139-84c7-4dd1-ac91-d6b98d1ce983",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }
-    );
+    await fetch("https://formspree.io/f/mrgrggko", {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: JSON.stringify(data),
+    });
 
     window.location = "https://dunnjm814.github.io/";
   });
