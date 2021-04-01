@@ -71,7 +71,14 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+#skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 75%;
+	height:auto;
+	margin: auto;
+}
 /* Basic */
 
 	@-ms-viewport {
