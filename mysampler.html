@@ -42,14 +42,14 @@
     <section id="banner" class="style2">
       <div class="inner">
         <span class="image">
-          <img src="images/mySampler.png" alt="" />
+          <img src="images/mySampler.png" alt="mySampler" />
         </span>
         <header class="major">
           <h1>MySampler</h1>
         </header>
         <div class="content">
-          <p>Lorem ipsum dolor sit amet nullam consequat<br />
-            sed veroeros. tempus adipiscing nulla.</p>
+          <p>In browser web audio instrument where users can play and sequence their samples online<br />
+            where users can play and sequence their samples online.</p>
         </div>
       </div>
     </section>
@@ -61,37 +61,46 @@
       <section id="one">
         <div class="inner">
           <header class="major">
-            <h2>Sed amet aliquam</h2>
+            <h2>What is mySampler?</h2>
           </header>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In
-            efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu
-            lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus
-            et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
+          <p>An interactive web application bringing a minimalist audio workflow into the browser environment. This web applications
+            was developed with React.js, Redux, Javascript, and CSS with a Python, Flask, SQLAlchemy backend, tied together with PostgreSQL as the database.
+            Tone.Js and the web audio api were used for audio playback, audio scheduling, audio signal generation, and routing/manipulation. AWS S3 cloud storage
+          was put to good use here to house all the users audio clips and send back a URL to store in the database.</p>
+          </p>
+          <ul class="actions">
+            <li><a href="https://mysampler.herokuapp.com/" class="button">Live Link</a></li>
+            <li><a href="https://github.com/dunnjm814/mySampler" class="button">Github</a></li>
+          </ul>
         </div>
       </section>
 
       <!-- Two -->
       <section id="two" class="spotlights">
         <section>
-          <a href="generic.html" class="image">
-            <img src="images/pic08.jpg" alt="" data-position="center center" />
+          <a href="#!" class="image">
+            <img src="images/mysampler1.png" alt="sampler-sequencer" data-position="center center" />
           </a>
           <div class="content">
             <div class="inner">
               <header class="major">
-                <h3>Orci maecenas</h3>
+                <h3>Scheduling samples</h3>
               </header>
-              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem.
-                In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor.
-                Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+              <p>Each of the eight input fields accepts an audio file (.wav, .mp3). The audio file makes its way through the the API routes as a put request, where it finds the appropriate sample,
+                slot on the sampler instance, stores the file into aws, brings the url back down to store in the database. On the way back to the UI, the redux store updates and informs the user of a sample
+                upload by conditionally rendering the file input style red. In the audio players the url is passed to web audio api through a buffer, an audio node is created in browser, and dropped into
+                the Tone.Player() instance. This is mapped to key press events for testing and playing along. The sequencer is a event scheduler when to play the audio, depending on what row is enabled, at
+                a specificly scheduled column. To make the sequence more musically interesting I also created a Tone.Polysynth() instance to play over the samples, and from a drop down menu a user may select
+                whatever musical scale they would like the synth to play.
+              </p>
               <ul class="actions">
-                <li><a href="generic.html" class="button">Learn more</a></li>
+                <li><a href="https://tonejs.github.io/" class="button">Tone.js is fun!</a></li>
               </ul>
             </div>
           </div>
         </section>
         <section>
-          <a href="generic.html" class="image">
+          <a href="#!" class="image">
             <img src="images/pic09.jpg" alt="" data-position="top center" />
           </a>
           <div class="content">
@@ -109,7 +118,7 @@
           </div>
         </section>
         <section>
-          <a href="generic.html" class="image">
+          <a href="#!" class="image">
             <img src="images/pic10.jpg" alt="" data-position="25% 25%" />
           </a>
           <div class="content">
@@ -121,7 +130,7 @@
                 In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor.
                 Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
               <ul class="actions">
-                <li><a href="generic.html" class="button">Learn more</a></li>
+                <li><a href="#!" class="button">Learn more</a></li>
               </ul>
             </div>
           </div>
@@ -173,7 +182,14 @@
             <div class="contact-method">
               <span class="icon solid alt fa-envelope"></span>
               <h3>Reach me at</h3>
-              <a href="#">dunnjm814@gmail.com</a>
+              <script>
+                document.write("<a hr");
+                document.write("ef='mai");
+                document.write("lto:jaso");
+                document.write("ndunn@g");
+                document.write("mail.com");
+                document.write("'>E-Mail me!</a>");
+              </script>
             </div>
           </section>
           <section>
