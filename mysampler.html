@@ -75,68 +75,6 @@
         </div>
       </section>
 
-      <!-- Two -->
-      <section id="two" class="spotlights">
-        <section>
-          <a href="#!" class="image">
-            <img src="images/mysampler1.png" alt="sampler-sequencer" data-position="center center" />
-          </a>
-          <div class="content">
-            <div class="inner">
-              <header class="major">
-                <h3>Scheduling samples</h3>
-              </header>
-              <p>Each of the eight input fields accepts an audio file (.wav, .mp3). The audio file makes its way through the the API routes as a put request, where it finds the appropriate sample,
-                slot on the sampler instance, stores the file into aws, brings the url back down to store in the database. On the way back to the UI, the redux store updates and informs the user of a sample
-                upload by conditionally rendering the file input style red. In the audio players the url is passed to web audio api through a buffer, an audio node is created in browser, and dropped into
-                the Tone.Player() instance. This is mapped to key press events for testing and playing along. The sequencer is a event scheduler when to play the audio, depending on what row is enabled, at
-                a specificly scheduled column. To make the sequence more musically interesting I also created a Tone.Polysynth() instance to play over the samples, and from a drop down menu a user may select
-                whatever musical scale they would like the synth to play.
-              </p>
-              <ul class="actions">
-                <li><a href="https://tonejs.github.io/" class="button">Tone.js is fun!</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="#!" class="image">
-            <img src="images/pic09.jpg" alt="" data-position="top center" />
-          </a>
-          <div class="content">
-            <div class="inner">
-              <header class="major">
-                <h3>Rhoncus magna</h3>
-              </header>
-              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem.
-                In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor.
-                Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-              <ul class="actions">
-                <li><a href="generic.html" class="button">Learn more</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section>
-          <a href="#!" class="image">
-            <img src="images/pic10.jpg" alt="" data-position="25% 25%" />
-          </a>
-          <div class="content">
-            <div class="inner">
-              <header class="major">
-                <h3>Sed nunc ligula</h3>
-              </header>
-              <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem.
-                In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor.
-                Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-              <ul class="actions">
-                <li><a href="#!" class="button">Learn more</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
-
       <!-- Three -->
       <section id="three">
         <div class="inner">
@@ -196,7 +134,7 @@
             <div class="contact-method">
               <span class="icon solid alt fa-phone"></span>
               <h3>Phone</h3>
-              <span>(248) 977-0866</span>
+              <a href="tel:248-977-0866">(248) 977-0866</a>
             </div>
           </section>
           <section>
